@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<package >
+	<metadata>
+		<id>Akka.Visualizer</id>
+		<version>1.0.0</version>
+		<title>Akka.Visualizer</title>
+		<authors>Corneliu I. Tusnea (corneliu@acorns.com.au)</authors>
+		<owners></owners>
+		<description>
+			A web based visualizer for your Akka ActorSystem.
+		</description>
+		<releaseNotes>
+			1. First initial alpha release
+		</releaseNotes>
+		<summary>
+			A web based visualizer for your Akka ActorSystem.
+		</summary>
+		<language>en-US</language>
+		<projectUrl>https://nuget.org/packages/Akka.Visualizer</projectUrl>
+		<iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
+		<copyright>Copyright  2016</copyright>
+		<dependencies>
+			<group targetFramework="net40">
+				<dependency id="Akka" version="1.0.8" />
+				<dependency id="Newtonsoft.Json" version="7.0.1" />
+				<dependency id="Microsoft.AspNet.WebApi.SelfHost" version="5.2.3" />
+				<dependency id="Microsoft.AspNet.WebApi.Core" version="5.2.3" />
+				<dependency id="Microsoft.AspNet.WebApi.Client" version="5.2.3" />
+			</group>
+		</dependencies>
+		<references></references>
+		<tags></tags>
+	</metadata>
+	<files>
+		<file src="lib\" target="lib" />
+		<file src="tools\" target="tools" />
+		<file src="content\" target="content" />
+	</files>
+</package>

@@ -1,0 +1,25 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "editor.insertSpaces": false,
+    "editor.wrappingColumn": 300,
+    "editor.detectIndentation": false,
+    "editor.tabSize": 4,
+    
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+		".editorconfig":true,
+		".eslintrc":true,
+		"_references.js":true,
+		"*protractor*":true,
+		"**karma*":true,
+		"Thumbs.db":true,
+		"webpack*":false,
+		"web.config":true,
+		"node_modules": false,
+		"test/":true,
+        "src/**/*.js":false,
+        "src/**/*.map":true,
+		"dist":true
+    }
+}

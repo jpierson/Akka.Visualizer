@@ -1,0 +1,14 @@
+<template>
+	<div class="panel ${class}">
+		<div class="panel-heading" show.bind="title">
+			<content select="menu"></content>
+			<h3 class="panel-title">${title}</h3>
+		</div>
+		
+		<content select="panel-header"></content>
+		<content select="panel-body"></content>
+		<content select="panel-footer"></content>
+			
+		<wait-overlay show.bind="wait" title.bind="wait"></wait-overlay>
+	</div>
+</template>

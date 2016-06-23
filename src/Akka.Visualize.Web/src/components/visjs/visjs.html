@@ -1,0 +1,34 @@
+<template>
+	<div ref="vControl" class="visualizer">
+	</div>
+
+	<div class="vis-info" ref="popup" show.bind="currentNode">
+		<div class="panel panel-success">
+			<div class="panel-heading">
+				<div class="menu-controls">
+					<button class="" title="Send Poison Pill" click.delegate="send('PoisonPill')"><i class="glyphicon glyphicon-stop"></i></button>
+					<button class="" title="Send Kill" click.delegate="send('Kill')"><i class="glyphicon glyphicon-ban-circle"></i></button>
+				</div>
+				<h3 class="panel-title">${currentNode.Name}</h3>
+			</div>
+			<div class="panel-body">
+				<div class="row">
+					<ul>
+						<li>${currentNode.Path}</li>
+						<li>${currentNode.IsLocal? "Local":"Remote"} ${currentNode.Type}</li>
+						<li show.bind="currentNode.Router">
+							Router: ${currentNode.Router.Type}${currentNode.Router.Pool?"Pool":"Group"}
+						</li>
+						<li show.bind="currentNode.Router.Pool">
+							Nr Instances: ${currentNode.Router.NrOfInstances}
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="vis-actions">
+		<button class="btn btn-sm btn-primary" click.delegate="reload()">Reload</button>
+	</div>
+</template>
