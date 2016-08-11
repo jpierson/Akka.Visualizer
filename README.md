@@ -34,5 +34,5 @@ ActorVisualizeExtension.InstallVisualizer(_system, webVisualizer);
 * This might not work on IE*
 
 ## Used Libraries
-* [Aurelia](www.aurelia.io)
-* [VisJs](visjs.org)
+* [Aurelia](http://aurelia.io/)
+* [VisJs](http://visjs.org/)
